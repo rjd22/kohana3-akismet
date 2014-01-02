@@ -1,4 +1,4 @@
-<?php defined('SYSPATH') or die(" {o,o}<br /> |)__)<br /> -\"-\"-<br />O RLY?!");
+<?php defined('SYSPATH') or die('No direct access allowed.');
 
 return array(
 
