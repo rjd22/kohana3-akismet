@@ -6,9 +6,10 @@ return array(
      * Use of the Akismet API requires an API key, which are currently only
      * being provided along with accounts to WordPress.com.
      */
-    'key' => 'YOUR_API_KEY',
+    'key' 			=> 'YOUR_API_KEY',
+	'blog' 			=> URL::base(TRUE),
 
-    'server'    => 'rest.akismet.com',
-    'port'      => 80,
-
+	'user_agent'	=> 'Kohana/'.Kohana::VERSION.' | Akismet/'.$this->_config['version'],
+    'server'    	=> 'rest.akismet.com',
+    'port'      	=> 80,
 );
