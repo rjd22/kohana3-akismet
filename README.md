@@ -69,6 +69,14 @@ $comment = array(
 );
 
 $akismet = Akismet::factory($config);
-print_r($akismet->is_spam($comment));
+
+// Check if Spam
+print_r($akismet->is_spam($comment)); // (bool) TRUE or FALSE;
+
+// Mark as Spam
+$akismet->submit_spam($comment);
+
+// Mark as Ham
+$akismet->submit_ham($comment);
 ```
 
