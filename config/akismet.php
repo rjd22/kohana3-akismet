@@ -9,7 +9,7 @@ return array(
     'key' 			=> 'YOUR_API_KEY',
 	'blog' 			=> URL::base(TRUE),
 
-	'user_agent'	=> 'Kohana/'.Kohana::VERSION.' | Akismet/'.$this->_config['version'],
+	'user_agent'	=> 'Kohana/'.Kohana::VERSION.' | Akismet/2.5.3',
     'server'    	=> 'rest.akismet.com',
     'port'      	=> 80,
 );

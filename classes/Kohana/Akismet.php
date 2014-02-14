@@ -113,10 +113,10 @@ class Kohana_Akismet {
 		if ($connection)
 		{
 			$http_request = "POST /1.1/$path HTTP/1.0\r\n"
-				. "Host: ".(( ! empty($this->_key)) ? $this->_key."." : NULL).$this->_config['server']."\r\n"
+				. "Host: ".(( ! empty($this->_config['key'])) ? $this->_config['key']."." : NULL).$this->_config['server']."\r\n"
 				. "Content-Type: application/x-www-form-urlencoded; charset=utf-8\r\n"
 				. "Content-Length: ".strlen($request)."\r\n"
-				. "User-Agent: ".Akismet::$_user_agent."\r\n"
+				. "User-Agent: ".$this->_config['user_agent']."\r\n"
 				. "\r\n"
 				. $request;
 
